@@ -1,0 +1,90 @@
+Arguments: 
+  /Users/daro/.nvm/versions/node/v14.20.0/bin/node /usr/local/bin/yarn install
+
+PATH: 
+  /Users/daro/.nvm/versions/node/v14.20.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/daro/.nvm/versions/node/v14.20.0/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  14.20.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://four-m-363894166745.d.codeartifact.us-east-1.amazonaws.com/npm/npm-modules/@4m%2feslint-config: Unauthenticated: request used expired credentials. Please renew your credentials.
+      at Request.params.callback [as _callback] (/usr/local/lib/node_modules/yarn/lib/cli.js:66145:18)
+      at Request.self.callback (/usr/local/lib/node_modules/yarn/lib/cli.js:140890:22)
+      at Request.emit (events.js:400:28)
+      at Request.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:141862:10)
+      at Request.emit (events.js:400:28)
+      at Gunzip.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:141784:12)
+      at Object.onceWrapper (events.js:519:28)
+      at Gunzip.emit (events.js:400:28)
+      at endReadableNT (internal/streams/readable.js:1333:12)
+      at processTicksAndRejections (internal/process/task_queues.js:82:21)
+
+npm manifest: 
+  {
+    "name": "4m-wallet-adapter",
+    "version": "0.0.88",
+    "description": "Solana / Near wallet adapter",
+    "main": "index.js",
+    "engines": {
+      "node": ">=14.17.0"
+    },
+    "scripts": {
+      "linter": "eslint ./ --fix",
+      "publish:patch": "npm version patch && npm publish",
+      "test": "jest",
+      "login": "aws codeartifact login --tool npm --repository npm-modules --domain four-m --domain-owner 363894166745 --namespace '@4m' --profile salmon --region us-east-1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/salmonw/4m-modules.git"
+    },
+    "keywords": [
+      "wallet"
+    ],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/salmonw/4m-modules/issues"
+    },
+    "homepage": "https://github.com/salmonw/4m-modules/tree/main/crypto/wallet-adapter#readme",
+    "devDependencies": {
+      "@4m/eslint-config": "^0.0.2",
+      "jest": "^28.1.0",
+      "ts-node": "^10.9.1",
+      "typescript": "^4.8.4"
+    },
+    "jest": {
+      "testTimeout": 240000
+    },
+    "dependencies": {
+      "@bonfida/spl-name-service": "^0.1.40",
+      "@solana/spl-token": "^0.2.0",
+      "@solana/web3.js": "^1.47.3",
+      "axios": "^0.27.2",
+      "bip32": "^2.0.6",
+      "bip39": "^3.0.4",
+      "bitcoinjs-lib": "^6.0.2",
+      "bitcore-lib": "^8.25.40",
+      "bs58": "^5.0.0",
+      "buffer": "^6.0.3",
+      "coinkey": "^3.0.0",
+      "ecpair": "^2.1.0",
+      "ed25519-hd-key": "^1.2.0",
+      "ethers": "^5.7.2",
+      "near-api-js": "^0.44.2",
+      "qs": "^6.10.3"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
