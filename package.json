@@ -1,7 +1,7 @@
 {
-  "name": "4m-wallet-adapter",
-  "version": "0.0.97",
-  "description": "Solana / Near wallet adapter",
+  "name": "eclipse-wallet-adapter",
+  "version": "0.0.1",
+  "description": "Eclipse Chain wallet adapter",
   "main": "index.js",
   "engines": {
     "node": ">=14.17.0"
@@ -9,12 +9,11 @@
   "scripts": {
     "linter": "eslint ./ --fix",
     "publish:patch": "npm version patch && npm publish",
-    "test": "jest",
-    "login": "aws codeartifact login --tool npm --repository npm-modules --domain four-m --domain-owner 363894166745 --namespace '@4m' --profile salmon --region us-east-1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/salmonw/4m-modules.git"
+    "url": "git+https://github.com/Eclipse-Laboratories-Inc/eclipse-wallet-adapter.git"
   },
   "keywords": [
     "wallet"
@@ -22,9 +21,8 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/salmonw/4m-modules/issues"
+    "url": "https://github.com/Eclipse-Laboratories-Inc/eclipse-wallet-adapter/issues"
   },
-  "homepage": "https://github.com/salmonw/4m-modules/tree/main/crypto/wallet-adapter#readme",
   "devDependencies": {
     "@4m/eslint-config": "^0.0.2",
     "jest": "^28.1.0",
