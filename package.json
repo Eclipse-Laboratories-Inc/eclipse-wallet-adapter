@@ -1,6 +1,6 @@
 {
   "name": "eclipse-wallet-adapter",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Eclipse Chain wallet adapter",
   "main": "index.js",
   "engines": {
